@@ -1,0 +1,17 @@
+body {
+  @extend %larsseit-400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 45px;
+  color: #22356F;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

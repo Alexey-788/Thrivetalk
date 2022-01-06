@@ -1,0 +1,28 @@
+//Included: Larsseit(400, 500, 700),
+
+@font-face {
+  font-family: Larsseit;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Larsseit"),
+  url("../fonts/Larsseit.woff2") format("woff2"),
+  url("../fonts/Larsseit.woff") format("woff");
+}
+
+@font-face {
+  font-family: Larsseit;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Larsseit-Medium"),
+  url("../fonts/Larsseit-Medium.woff2") format("woff2"),
+  url("../fonts/Larsseit-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: Larsseit;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Larsseit-Bold"),
+  url("../fonts/Larsseit-Bold.woff2") format("woff2"),
+  url("../fonts/Larsseit-Bold.woff") format("woff");
+}
