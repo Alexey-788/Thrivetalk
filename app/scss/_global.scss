@@ -15,3 +15,133 @@ a {
   padding: 0 10px;
   margin: 0 auto;
 }
+
+.logo {
+  @extend %larsseit-700;
+  line-height: 23px;
+  color: #62D0DF;
+}
+
+.title {
+  text-transform: uppercase;
+  @extend %larsseit-400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.help-cards {
+  display: flex;
+
+  &__item {
+    position: relative;
+    flex: 1 0 0;
+    height: 360px;
+    padding: 90px 10px 20px;
+  }
+
+  &__item:nth-child(4n - 3) {
+    background: #FFE2DE;
+  }
+
+  &__item:nth-child(4n - 2) {
+    background: #C4E769;
+  }
+
+  &__item:nth-child(4n - 1) {
+    background: #62D0DF;
+  }
+
+  &__item:nth-child(4n) {
+    background: #0052C1;
+  }
+
+  &__item-inner {
+    position: relative;
+    max-width: 255px;
+    margin: 0 auto;
+  }
+
+  &__item-inner:before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+  }
+
+  &__item-title {
+    position: relative;
+    padding-left: 25px;
+    @extend %larsseit-700;
+    font-size: 32px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  &__item-title:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #E9B730;
+  }
+
+  &__item-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card-section {
+  position: relative;
+
+  &__inner {
+    max-width: 676px;
+    padding: 100px 0 55px;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 220px;
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
+    letter-spacing: -0.64px;
+    @extend %larsseit-700;
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  &__text {
+    margin-bottom: 200px;
+    letter-spacing: -0.36px;
+    @extend %larsseit-700;
+    font-size: 36px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: 0.16px;
+    @extend %larsseit-700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FAB63E;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}

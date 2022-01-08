@@ -11,8 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
-    max-height: 850px;
+    min-height: 100vh;
     padding: 27px 0 75px;
   }
 
@@ -79,12 +78,6 @@
   }
 }
 
-.logo {
-  @extend %larsseit-700;
-  line-height: 23px;
-  color: #62D0DF;
-}
-
 .menu {
   &__list {
     display: flex;
@@ -118,6 +111,245 @@
   line-height: 14px;
   background: #62D0DF;
   color: #FFF;
+  cursor: pointer;
+}
+
+.why {
+  position: relative;
+  background: #62D0DF;
+
+  &__inner {
+    width: 560px;
+    padding: 150px 0 100px;
+    color: #FFFFFF;
+  }
+
+  &__title {
+    @extend %larsseit-700;
+    font-size: 36px;
+    line-height: 23px;
+    margin-bottom: 90px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  &__text-questions {
+    @extend %larsseit-700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+}
+
+.about {
+
+  &__inner {
+    position: relative;
+    padding: 150px 0 40px;
+  }
+
+  &__title {
+    position: absolute;
+    left: -75px;
+    top: 155px;
+  }
+
+  &__text {
+    max-width: 592px;
+    margin: 0 auto;
+    @extend %larsseit-500;
+    line-height: 29px;
+  }
+}
+
+.help {
+  padding: 70px 0 40px;
+
+  &__title {
+    margin-bottom: 25px;
+    opacity: .5;
+    text-align: center;
+  }
+
+  &__row {
+    margin-bottom: 120px;
+  }
+
+  &__grid {
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+
+    .help-cards__item {
+      flex: 1 0 33%;
+      overflow: hidden;
+    }
+
+    .help-cards__item:nth-child(6n - 5) {
+      background: #22356F;
+    }
+
+    .help-cards__item:nth-child(6n - 4) {
+      background: #0052C1;
+    }
+
+    .help-cards__item:nth-child(6n - 3) {
+      background: #76B58B;
+    }
+
+    .help-cards__item:nth-child(6n - 2) {
+      background: #62D0DF;
+    }
+
+    .help-cards__item:nth-child(6n - 1) {
+      background: #DEE1FF;
+    }
+
+    .help-cards__item:nth-child(6n) {
+      background: #8F00FF;
+    }
+
+    .help-cards__item-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .help-cards__item-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(100%);
+      transition: transform .7s;
+      object-fit: cover;
+    }
+
+    .help-cards__item:hover .help-cards__item-image {
+      transform: translateY(0);
+    }
+  }
+
+  &__works {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__works-item {
+    flex: 1 0 33%;
+    padding: 55px 80px 40px 105px;
+  }
+
+  &__works-title {
+    margin-bottom: 28px;
+    letter-spacing: -0.84px;
+    @extend %larsseit-400;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  &__works-text {
+    letter-spacing: -0.48px;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.contact {
+  color: #FFFFFF;
+  background: #22356F;
+
+  .card-section__inner {
+    margin: 0 auto 0 0;
+  }
+
+  .card-section__text {
+    margin-bottom: 55px;
+    letter-spacing: -0.18px;
+  }
+  
+  .card-section__link {
+    color: #62D0DF;
+  }
+
+  .card-section__image {
+    left: auto;
+    right: 0;
+  }
+}
+
+.footer {
+
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 100px 40px 100px 0;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  &__column {
+    flex: 0 1 240px;
+    font-size: 14px;
+  }
+
+  &__column + &__column {
+    margin-left: 22px;
+  }
+
+  &__column-title {
+    margin-bottom: 55px;
+    text-transform: uppercase;
+    @extend %larsseit-700;
+    line-height: 13px;
+  }
+
+  &__column-text {
+    display: block;
+    opacity: 0.5;
+    line-height: 25px;
+  }
+
+  &__address {
+    margin-bottom: 25px;
+  }
+  
+  &__mail {
+    color: #006DFF;
+  }
+
+  &__copy {
+    padding: 36px 34px;
+    background: #62D0DF;
+  }
+
+  &__copy-text {
+    @extend %larsseit-700;
+    font-size: 16px;
+    line-height: 9px;
+    color: #FFFFFF;
+  }
+
+  &__copy-text span {
+    position: relative;
+    top: 2px;
+    padding-right: 6px;
+  }
 }
 
 @import 'media';
