@@ -13,3 +13,76 @@
   font-family: Larsseit, sans-serif;
   font-weight: 700;
 }
+
+
+
+//-----------------
+
+%font-64-80 {
+  font-size: 64px;
+  line-height: 80px;
+
+  @media (max-width: 1200px) {
+    font-size: 54px;
+    line-height: 62px;
+  }
+
+  @media (max-width: 760px) {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+%font-48-45 {
+  font-size: 48px;
+  line-height: 45px;
+
+  @media (max-width: 1200px) {
+    font-size: 38px;
+    line-height: 36px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 29px;
+    line-height: 33px;
+  }
+}
+
+%font-36-45 {
+  font-size: 36px;
+  line-height: 45px;
+
+
+  @media (max-width: 960px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+%font-36-23 {
+  font-size: 36px;
+  line-height: 23px;
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
+}
+
+%font-32-29 {
+  font-size: 32px;
+  line-height: 39px;
+  
+  @media (max-width: 760px) {
+    font-size: 28px;
+  }
+}

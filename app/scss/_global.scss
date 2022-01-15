@@ -32,6 +32,7 @@ a {
 
 .help-cards {
   display: flex;
+  flex-wrap: wrap;
 
   &__item {
     position: relative;
@@ -76,8 +77,7 @@ a {
     position: relative;
     padding-left: 25px;
     @extend %larsseit-700;
-    font-size: 32px;
-    line-height: 29px;
+    @extend %font-32-29;
     color: #FFFFFF;
   }
 
@@ -118,15 +118,14 @@ a {
     margin-bottom: 60px;
     letter-spacing: -0.64px;
     @extend %larsseit-700;
-    font-size: 64px;
-    line-height: 80px;
+    @extend %font-64-80;
   }
 
   &__text {
     margin-bottom: 200px;
     letter-spacing: -0.36px;
     @extend %larsseit-700;
-    font-size: 36px;
+    @extend %font-36-45;
   }
 
   &__link {

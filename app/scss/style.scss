@@ -19,6 +19,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 50px;
   }
 
@@ -30,7 +31,7 @@
     margin: 40px 0 95px;
     text-transform: uppercase;
     @extend %larsseit-700;
-    font-size: 48px;
+    @extend %font-48-45
   }
 
   &__text {
@@ -39,12 +40,15 @@
 
   &__questions-item {
     padding: 15px 30px;
-    margin-right: 8px;
     text-transform: uppercase;
     @extend %larsseit-700;
     font-size: 16px;
     line-height: 20px;
     color: #FAB63E;
+  }
+
+  &__questions-item + &__questions-item {
+    margin-left: 8px;
   }
 
   &__questions-item:first-child {
@@ -101,6 +105,10 @@
   }
 }
 
+.menu-button {
+  display: none;
+}
+
 .contact-button {
   padding: 18px 30px;
   border: none;
@@ -120,14 +128,13 @@
 
   &__inner {
     width: 560px;
-    padding: 150px 0 100px;
+    padding: 160px 0 110px;
     color: #FFFFFF;
   }
 
   &__title {
     @extend %larsseit-700;
-    font-size: 36px;
-    line-height: 23px;
+    @extend %font-36-23;
     margin-bottom: 90px;
   }
 
@@ -245,7 +252,12 @@
 
   &__works-item {
     flex: 1 0 33%;
-    padding: 55px 80px 40px 105px;
+  }
+
+  &__works-inner {
+    width: 300px;
+    padding: 55px 10px 40px;
+    margin: 0 auto;
   }
 
   &__works-title {
@@ -293,7 +305,7 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    padding: 100px 40px 100px 0;
+    padding: 100px 40px;
   }
 
   &__image {
